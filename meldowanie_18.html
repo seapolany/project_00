@@ -7,23 +7,185 @@
 	<script src="jquery/jquery-3.2.1.min.js"></script>
 	<script src="jquery/jquery-ui.min.js"></script>
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <style>
+   
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    __padding: 10px;
+    __height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 10px;
+}
+
+.middle {
+    background-image: url("meldowanie18.png");
+    width: 548px;
+    height: 711px;
+    margin: auto;
+}
+#container{        
+    margin: auto;
+    border-style: solid; 
+    
+}
+        #opis_dol{
+          margin: auto;
+            width: 75%;
+        }
+
+#opis0, #opis1,#opis2,#opis3,#opis4,#opis5,#opis6{
+    width: 150px;
+    height: 15px;
+    background: #6699ff;
+    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+    overflow:hidden;
+    position: relative;
+    left: 142px;
+    font-family: "Lucida Console";
+}
+li {
+            font-family: "Lucida Console";
+        }
+        
+#opis0 {
+    
+    top: 352px;
+    z-index: 7;
+}
+        
+#opis1 {
+
+    top: 355px;
+    z-index: 6;
+}
+#opis2 {
+
+    top: 357px;
+    z-index: 5;
+        }
+#opis3 {
+
+    top: 360px;
+    z-index: 4;
+}
+#opis4 {
+
+    top: 362px;
+    z-index: 3;
+}
+#opis5 {
+
+    top: 365px;
+    z-index: 2;
+}
+#opis6 {
+
+    top: 202px;
+    z-index: 1;
+}
+
+#opis0:hover, #opis1:hover, #opis2:hover, #opis3:hover, #opis4:hover, #opis5:hover, #opis6:hover {
+    width: 300px;
+    height: 60px;
+}
+img{
+    z-index: -1;
+        }
+        
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+    </style>
 </head>
 <body>
     <h1>Meldowanie v1801</h1>
-
     <div id="container">
-    <div id="right"></div>
-    <div id="center">
-        <img src="meldowanie18.png" alt="obrazek">
+        <div class="__row">
+          <div class="__column __left" style="background-color:#aaa;">
+            
+          </div>
+          <div class="__column middle" style="background-color:#bbb;">
+            
+              <div id="opis6">
+                Prace zlecone przez Dział Techniczny mają być zapisane jako przestój.
+              </div>
+             
+              <div id="opis0">
+                Mycie awaryjne rejestrowane ma być w tej komórce.
+              </div>
+                <div id="opis1">
+                Czas maszynowy.
+              </div>
+              <div id="opis2">
+                Czas osobowy. Ilość ludzi x czas przebywania przy linii.
+              </div>
+              <div id="opis3">
+                Czas awarii wpisywany z systemu SRP
+              </div>
+              <div id="opis4">
+                Czas mycia linii.
+              </div>
+            <div id="opis5">
+                Czas przezbrojenia linii. Przejście między asortymentami, zmiana opakowań.
+            </div>
+              
+              
+              
+            </div>
+            
+        <div class="__column __right" style="background-color:#ccc;">
+            
+          </div>
+                              
+              
+              
+          </div>
+        <div id="opis_dol">
+              
+              <ol type="1">
+  <li>Mycie awaryjne rejestrowane ma być w komórce: Cz.Osb.o-Myc nieplan.</li>
+  <li>Czas awarii wpisywany będzie z systemu SRP. Do czasu awarii doliczone będą wszystkie przekroczenia czasów mycia i przekroczenia czasów przejść pomiędzy asortymentami.</li>
+  <li>Mycia długie, na początku cyklu należy rozpisywać  proporcjonalnie do wielkości produkcji.</li>
+  <li>Każde przedłużenie mycia, ponad czas założony traktujemy jako awarię.</li>
+  <li>Jeżeli przedłuży się mycie wstępne, czas ponadnormatywny meldowany będzie jako awaria do pierwszego zlecenia  po myciu początkowym.</li>
+  <li>Jeżeli przedłuży się mycie końcowe, czas ponadnormatywny meldowany będzie jako awaria do ostatniego zlecenia  przed myciem końcowym.</li>
+  <li>Jeżeli przekroczony zostanie czas przeznaczony na przejście pomiędzy asortymentami, meldowany będzie jako awaria do pierwszego zlecenia  po przezbrojeniu.</li>
+  <li>Prace zlecone przez Dział Techniczny mają być zapisane jako przestój, dział techniczny podaje planowany czas trwania tych prac zleconych. Jeżeli faktyczny czas zaplanowany na prace zlecone będzie dłuższy niż zaplanowany to proszę go rejestrować jako awaria.</li>
+  
+</ol>
+              
+</div>
+
+        
+        
+
+        
+        
+        
         </div>
-    <div id="left"></div>
+   
     
-    
-    </div>
-    <div></div>
+   
     <div></div>
 
-    <script src="designs.js"></script>
+    
 	
 </body>
 </html>
