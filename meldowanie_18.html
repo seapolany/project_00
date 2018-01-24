@@ -97,8 +97,8 @@ li {
 }
 
 #opis0:hover, #opis1:hover, #opis2:hover, #opis3:hover, #opis4:hover, #opis5:hover, #opis6:hover {
-    width: 300px;
-    height: 60px;
+    width: 600px;
+    height: 75px;
 }
 img{
     z-index: -1;
@@ -124,26 +124,26 @@ img{
           <div class="__column middle" style="background-color:#bbb;">
             
               <div id="opis6">
-                Prace zlecone przez Dział Techniczny mają być zapisane jako przestój.
+                Czas przestoju – to czas w którym linia zgodnie z planem nie pracowała, (linia kończy pracę np. o 9:00 później mycie np. 2h, czyli od 11:00 do końca zmiany rejestrujemy jako czas przestoju) oraz czas prac serwisowych planowanych.
               </div>
              
               <div id="opis0">
                 Mycie awaryjne rejestrowane ma być w tej komórce.
               </div>
                 <div id="opis1">
-                Czas maszynowy.
+                Czas maszynowy – czas w którym linia pracuje i produkuje.
               </div>
               <div id="opis2">
                 Czas osobowy. Ilość ludzi x czas przebywania przy linii.
               </div>
               <div id="opis3">
-                Czas awarii wpisywany z systemu SRP
+                Czas awarii – to czas faktycznych awarii i regulacji urządzeń (dane z SRP)
               </div>
               <div id="opis4">
-                Czas mycia linii.
+                Czas mycia – standardowy czas mycia i sterylizacji.
               </div>
             <div id="opis5">
-                Czas przezbrojenia linii. Przejście między asortymentami, zmiana opakowań.
+                Czas przezbrojenia i zmiany asortymentu – czas zmiany formatu, zmiany asortymentu, zmiany etykiet, itp.
             </div>
               
               
@@ -160,16 +160,17 @@ img{
         <div id="opis_dol">
               
               <ol type="1">
-  <li>Mycie awaryjne rejestrowane ma być w komórce: Cz.Osb.o-Myc nieplan.</li>
-  <li>Czas awarii wpisywany będzie z systemu SRP. Do czasu awarii doliczone będą wszystkie przekroczenia czasów mycia i przekroczenia czasów przejść pomiędzy asortymentami.</li>
+  <li>Mycie awaryjne rejestrowane ma być w komórce: Cz.Osb.o-Myc nieplan. Do tego czasu zaliczamy przedłużenie standardowego mycia na początku i na końcu produkcji. Oraz niezapalnowane mycia po utracie sterylizacji. Np. z powodu zaniku zasilania.</li>
+  <li>Czas awarii wpisywany z systemu SRP.</li>
   <li>Mycia długie, na początku cyklu należy rozpisywać  proporcjonalnie do wielkości produkcji.</li>
-  <li>Każde przedłużenie mycia, ponad czas założony traktujemy jako awarię.</li>
-  <li>Jeżeli przedłuży się mycie wstępne, czas ponadnormatywny meldowany będzie jako awaria do pierwszego zlecenia  po myciu początkowym.</li>
-  <li>Jeżeli przedłuży się mycie końcowe, czas ponadnormatywny meldowany będzie jako awaria do ostatniego zlecenia  przed myciem końcowym.</li>
-  <li>Jeżeli przekroczony zostanie czas przeznaczony na przejście pomiędzy asortymentami, meldowany będzie jako awaria do pierwszego zlecenia  po przezbrojeniu.</li>
-  <li>Prace zlecone przez Dział Techniczny mają być zapisane jako przestój, dział techniczny podaje planowany czas trwania tych prac zleconych. Jeżeli faktyczny czas zaplanowany na prace zlecone będzie dłuższy niż zaplanowany to proszę go rejestrować jako awaria.</li>
+  <li>Każde przedłużenie mycia, ponad czas założony wpisujemy w pole: Mycie awaryjne (Cz.Osb.o-Myc nieplan.)
+        Jeżeli przedłuży się mycie przed produkcją, czas ponadnormatywny meldowany będzie jako Mycie awaryjne do pierwszego zlecenia  po myciu początkowym.
+        Jeżeli przedłuży się mycie końcowe, czas ponadnormatywny meldowany będzie jako Mycie awaryjne do ostatniego zlecenia  przed myciem końcowym.</li>
+  
+  <li>Prace zlecone przez Dział Techniczny mają być zapisane jako przestój. Dział techniczny podaje planowany czas trwania tych prac zleconych. Jeżeli faktyczny czas zaplanowany na prace zlecone będzie dłuższy niż zaplanowany to proszę go rejestrować jako awaria.</li>
   
 </ol>
+
               
 </div>
 
